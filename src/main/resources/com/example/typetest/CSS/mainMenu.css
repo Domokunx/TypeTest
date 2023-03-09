@@ -1,0 +1,20 @@
+#page {
+    -fx-background-color: "white";
+}
+
+#title {
+    -fx-text-fill: "black";
+}
+
+#practiceBtn {
+    -fx-background-color: "transparent";
+    -fx-text-fill: "black";
+}
+
+#practiceBtn:hover {
+    -fx-text-fill: "orange";
+}
+
+#optionsBtn {
+-fx-background-color: "transparent";
+}

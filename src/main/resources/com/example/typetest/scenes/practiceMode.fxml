@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="page" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.typetest.PracticeModeController">
+   <children>
+      <ProgressBar layoutX="15.0" layoutY="5.0" prefHeight="5.0" prefWidth="575.0" progress="0.0" />
+      <Button fx:id="quitBtn" cancelButton="true" layoutX="5.0" layoutY="369.0" mnemonicParsing="false" onAction="#switchToMainMenu" style="-fx-background-color: transparent;" text="Quit">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <StackPane layoutX="9.0" layoutY="27.0" prefHeight="200.0" prefWidth="581.0">
+         <children>
+            <TextArea fx:id="paragraph" editable="false" focusTraversable="false" mouseTransparent="true" prefHeight="202.0" prefWidth="574.0" promptText="Choosing Text..." style="-fx-control-inner-background: #333; -fx-text-fill: aqua;" text="This is a very random sentence totally did not just continue pressing auto complete on my Iphone." wrapText="true">
+               <font>
+                  <Font name="Segoe Fluent Icons" size="27.0" />
+               </font>
+            </TextArea>
+         </children>
+      </StackPane>
+      <TextField fx:id="typingArea" layoutX="34.0" layoutY="235.0" onKeyPressed="#onSubmitWord" prefHeight="25.0" prefWidth="182.0" />
+      <Label fx:id="accuracyLabel" layoutX="233.0" layoutY="235.0" prefHeight="25.0" prefWidth="95.0" text="Acc: " />
+   </children>
+</AnchorPane>

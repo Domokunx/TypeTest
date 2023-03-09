@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.typetest.CreditsController">
+   <children>
+      <TextArea editable="false" layoutX="193.0" layoutY="58.0" prefHeight="200.0" prefWidth="200.0" text="                      Creator &#10;                     Cliff Koes&#10;&#10;                Special Thanks: &#10;Friends who beta tested this shit" wrapText="true" />
+      <Button layoutX="14.0" layoutY="361.0" mnemonicParsing="false" onAction="#switchToMainMenu" text="Back" />
+   </children>
+</AnchorPane>
