@@ -4,17 +4,14 @@
 
 #title {
     -fx-text-fill: "black";
+    -fx-background-color: "transparent";
 }
 
-#practiceBtn {
-    -fx-background-color: "transparent";
+.btn {
+    -fx-background-color: "white";
     -fx-text-fill: "black";
 }
 
-#practiceBtn:hover {
+.btn:hover {
     -fx-text-fill: "orange";
-}
-
-#optionsBtn {
--fx-background-color: "transparent";
 }

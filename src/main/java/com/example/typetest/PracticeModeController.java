@@ -2,16 +2,12 @@ package com.example.typetest;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -30,8 +26,13 @@ public class PracticeModeController {
     private Parent root;
 
     public void onSubmitWord() {
+        checkCurrentWord();
+    }
+
+    private void checkCurrentWord() {
         typingArea.setOnKeyPressed(keyEvent -> {
             if (keyEvent.getCode() == KeyCode.SPACE) {
+                highlightCurrentWord();
                 String wordTyped = typingArea.getText().trim();
                 String paragraphText = paragraph.getText();
                 String[] words = paragraphText.split(" ");
@@ -51,6 +52,13 @@ public class PracticeModeController {
                 stage.show();
             }
         });
+    }
+
+    public void highlightCurrentWord() {
+        paragraph.requestFocus();
+        paragraph.selectNextWord();
+        typingArea.requestFocus();
+
     }
 
     public void switchToMainMenu(ActionEvent e) throws IOException {

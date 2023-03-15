@@ -1,32 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ProgressBar?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="page" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.typetest.PracticeModeController">
+<VBox fx:id="page" prefHeight="508.0" prefWidth="548.0" stylesheets="@../CSS/practiceMode.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.typetest.PracticeModeController">
    <children>
-      <ProgressBar layoutX="15.0" layoutY="5.0" prefHeight="5.0" prefWidth="575.0" progress="0.0" />
-      <Button fx:id="quitBtn" cancelButton="true" layoutX="5.0" layoutY="369.0" mnemonicParsing="false" onAction="#switchToMainMenu" style="-fx-background-color: transparent;" text="Quit">
+      <HBox>
+         <children>
+            <ProgressBar maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="5.0" prefWidth="575.0" progress="0.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="13.0" prefWidth="700.0">
+         <children>
+            <Pane minHeight="0.0" prefHeight="38.0" prefWidth="700.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="222.0" prefWidth="701.0">
+         <children>
+            <Pane prefHeight="222.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <TextArea fx:id="paragraph" editable="false" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="700.0" minWidth="500.0" mouseTransparent="true" prefHeight="202.0" prefWidth="551.0" promptText="Choosing Text..." style="-fx-control-inner-background: white; -fx-text-fill: black;" text="This is a very random sentence totally did not just continue pressing auto complete on my Iphone." wrapText="true" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Segoe Fluent Icons" size="27.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="100.0" right="100.0" top="20.0" />
+               </HBox.margin>
+            </TextArea>
+            <Pane prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </HBox>
+      <HBox prefHeight="112.0" prefWidth="579.0">
+         <children>
+            <Pane prefHeight="112.0" prefWidth="0.0" HBox.hgrow="ALWAYS" />
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="112.0" prefWidth="585.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label fx:id="accuracyLabel" prefHeight="25.0" prefWidth="95.0" text="Acc: " />
+                  <TextField fx:id="typingArea" maxWidth="200.0" onKeyPressed="#onSubmitWord" prefHeight="25.0" prefWidth="164.0" VBox.vgrow="NEVER" />
+               </children>
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+            </VBox>
+            <Pane prefHeight="112.0" prefWidth="231.0" />
+         </children>
+      </HBox>
+      <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="0.0" prefWidth="462.0" VBox.vgrow="ALWAYS" />
+      <Button fx:id="quitBtn" cancelButton="true" mnemonicParsing="false" onAction="#switchToMainMenu" style="-fx-background-color: transparent;" text="Quit" VBox.vgrow="ALWAYS">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
-      <StackPane layoutX="9.0" layoutY="27.0" prefHeight="200.0" prefWidth="581.0">
-         <children>
-            <TextArea fx:id="paragraph" editable="false" focusTraversable="false" mouseTransparent="true" prefHeight="202.0" prefWidth="574.0" promptText="Choosing Text..." style="-fx-control-inner-background: #333; -fx-text-fill: aqua;" text="This is a very random sentence totally did not just continue pressing auto complete on my Iphone." wrapText="true">
-               <font>
-                  <Font name="Segoe Fluent Icons" size="27.0" />
-               </font>
-            </TextArea>
-         </children>
-      </StackPane>
-      <TextField fx:id="typingArea" layoutX="34.0" layoutY="235.0" onKeyPressed="#onSubmitWord" prefHeight="25.0" prefWidth="182.0" />
-      <Label fx:id="accuracyLabel" layoutX="233.0" layoutY="235.0" prefHeight="25.0" prefWidth="95.0" text="Acc: " />
    </children>
-</AnchorPane>
+</VBox>

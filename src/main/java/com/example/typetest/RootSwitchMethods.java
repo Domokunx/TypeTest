@@ -1,13 +1,9 @@
 package com.example.typetest;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -18,8 +14,6 @@ public class RootSwitchMethods {
     private Parent root;
 
     public void switchToPracticeMode(ActionEvent e) throws IOException {
-        PracticeModeController pracCnt = new PracticeModeController();
-
         root = FXMLLoader.load(getClass().getResource("scenes/practiceMode.fxml"));
         stage = HelloApplication.getPrimaryStage();
         scene = stage.getScene();

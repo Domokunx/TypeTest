@@ -38,6 +38,16 @@
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>net.sourceforge.javydreamercsw</groupId>
+            <artifactId>Dimension-Extension</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>viewport-dimensions</artifactId>
+            <version>0.2.0</version>
+        </dependency>
     </dependencies>
 
     <build>
