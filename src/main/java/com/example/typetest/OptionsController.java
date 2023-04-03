@@ -6,12 +6,16 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 public class OptionsController {
     private Stage stage;
     private Scene scene;
     private Parent root;
+    private boolean fullscreen;
 
     public void switchToMainMenu(ActionEvent e) throws IOException {
         root = FXMLLoader.load(getClass().getResource("scenes/mainMenu.fxml"));
@@ -22,9 +26,26 @@ public class OptionsController {
         stage.setScene(scene);
         stage.show();
     }
-    public void enableFullScreen(ActionEvent e) throws IOException {
+    public void enableFullScreen() throws IOException {
         stage = HelloApplication.getPrimaryStage();
-        stage.setFullScreen(!stage.isFullScreen());
+        Properties prop = new Properties();
+        String config = "C:/Users/cliff/OneDrive/Desktop/Projects/TypeTest/target/classes/com/example/typetest/app.config" ;
+        try (FileInputStream fis = new FileInputStream(config)) {
+            prop.load(fis);
+            fullscreen = !Boolean.parseBoolean(prop.getProperty("app.fullScreen"));
+            if (fullscreen) {
+                prop.setProperty("app.fullScreen", "true");
+                prop.store(new FileOutputStream(config), "fullscreen change");
+            }
+            else {
+                prop.setProperty("app.fullScreen", "false");
+                prop.store(new FileOutputStream(config), "fullscreen change");
+            }
+        }
+        catch (Exception e) {
+            System.out.println(e);
+        }
+        stage.setFullScreen(fullscreen);
         stage.show();
     }
 }

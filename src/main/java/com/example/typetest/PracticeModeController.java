@@ -26,6 +26,11 @@ public class PracticeModeController {
     private Parent root;
 
     public void onSubmitWord() {
+        String paragraphText = paragraph.getText();
+        String[] words = paragraphText.split(" ");
+        if (wordIndex == words.length - 1) {
+            return;
+        }
         checkCurrentWord();
     }
 

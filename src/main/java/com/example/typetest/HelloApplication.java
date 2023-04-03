@@ -8,6 +8,9 @@ import javafx.scene.image.Image;
 import javafx.scene.input.KeyCombination;
 import javafx.stage.Stage;
 
+import java.io.FileInputStream;
+import java.util.Properties;
+
 public class HelloApplication extends Application {
     private static Stage primaryStage;
 
@@ -23,6 +26,16 @@ public class HelloApplication extends Application {
             String cssURL = getClass().getResource("CSS/mainMenu.css").toExternalForm();
             mainMenu.getStylesheets().add(cssURL);
             Image icon = new Image(getClass().getResource("images/icon.png").toExternalForm());
+
+            Properties prop = new Properties();
+            String config = "C:/Users/cliff/OneDrive/Desktop/Projects/TypeTest/target/classes/com/example/typetest/app.config" ;
+            try (FileInputStream fis = new FileInputStream(config)) {
+                prop.load(fis);
+                primaryStage.setFullScreen(Boolean.parseBoolean(prop.getProperty("app.fullScreen")));
+            }
+            catch (Exception e) {
+                System.out.println(e);
+            }
 
             primaryStage.getIcons().add(icon);
             primaryStage.setResizable(false);

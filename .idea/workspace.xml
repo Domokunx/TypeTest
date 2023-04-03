@@ -10,24 +10,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a262fa3-ce40-4244-be4f-d50cb0a523d2" name="Changes" comment="Type Test Function somewhat done">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/TypeTest_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/typetest/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/typetest/CSS/practiceMode.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/typetest/app.config" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/TypeTest_jar/TypeTest.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/TypeTest_jar/TypeTest.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/typetest/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/typetest/HelloApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/typetest/MainMenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/typetest/MainMenuController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/typetest/OptionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/typetest/OptionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/typetest/PracticeModeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/typetest/PracticeModeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/typetest/RootSwitchMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/typetest/RootSwitchMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/typetest/CSS/mainMenu.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/typetest/CSS/mainMenu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/typetest/scenes/mainMenu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/typetest/scenes/mainMenu.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/typetest/scenes/options.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/typetest/scenes/options.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/typetest/scenes/practiceMode.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/typetest/scenes/practiceMode.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,8 +71,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\cliff\OneDrive\Desktop\Projects\TypeTest\src\main\resources\com\example\typetest\scenes" />
       <recent name="C:\Users\cliff\OneDrive\Desktop\Projects\TypeTest\src\main\resources\com\example\typetest" />
+      <recent name="C:\Users\cliff\OneDrive\Desktop\Projects\TypeTest\src\main\resources\com\example\typetest\scenes" />
       <recent name="C:\Users\cliff\OneDrive\Desktop\Projects\TypeTest\src\main\resources\com\example\typetest\images" />
       <recent name="C:\Users\cliff\OneDrive\Desktop\Projects\TypeTest\src\main\resources" />
     </key>
